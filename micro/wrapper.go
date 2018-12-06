@@ -24,5 +24,5 @@ func handlingError(err error, serviceName string) error {
 		}
 		return err
 	}
-	return gerrors.InternalServerError(10000, serviceName, err.Error(), "")
+	return gerrors.InternalServerError(10000, err.Error(), "")
 }
